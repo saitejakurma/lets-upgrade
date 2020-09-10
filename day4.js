@@ -1,9 +1,11 @@
+//Q! changing image
 function thor(){
+
     const ht= document.getElementsByClassName("Thor");
     const newurl="https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/06/Avengers-Endgame-Thor-feature.jpg"; 
    
     ht[0].src=newurl;
-    console.log(ht[0].src);
+    //console.log(ht[0].src);
 //     const ele=document.getElementById("Thor");
 //     const newurl="https://qph.fs.quoracdn.net/main-qimg-db1fe32fc8c4fd238354142f0fbcb5f7"; 
 //    ele.src=newurl;
@@ -21,6 +23,7 @@ function IronMan(){
    
     ht[0].src=newurl;
 }
+//Q2 coping text
 function changetext(){
 const yt=document.getElementsByClassName("fine");
 let tu=yt[0].value;
@@ -42,7 +45,7 @@ let ut=[
     },
     {
         name:"sai",
-        age:19,
+        age:33,
         country:"us",
         hobbies:[ "cricket", "football", "swiming"],
         
@@ -64,13 +67,20 @@ B. Write a function to display all the objects on the console
 function ui(){
     console.log(ut);
 }
+//@Q4 @ Write a function to display all the objects having age less than 30
+//B. Write a function to display all the objects having country India
 ui();   
-let io=[];
+let io={name:" ",age:" ", country:" ",hobbies:[]}
+
 function up (){
   ut.forEach(function( a){
    let ty=a.country
   if(ty=="india"){
-      io.push(a);
+      io.name=a.name;
+      io.age=a.age;
+      io.country=a.country;
+      io.hobbies=a.hobbies;
+     
   }
 })
 }
@@ -78,7 +88,7 @@ function up (){
 
 up();
 let iu=[];
-console.log("country is india"+io);
+console.log("country is india" +JSON.stringify(io));
 
 
 function ul (){
@@ -90,4 +100,4 @@ function ul (){
   })
   }
 ul();
-console.log("age more than 30"+iu);
+console.log("country is"+JSON.stringify(iu));
