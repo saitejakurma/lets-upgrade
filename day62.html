@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show{
+            display: inline-table;
+            width:100%; 
+            align-content: center;
+          
+        }
+        .blue{
+            width: 100%;
+        }
+        .nine{
+            width: 80%;
+            height: 70vh;
+            margin-top: 50px;
+            padding: 10cvh;
+            margin-left: 50px;
+           text-align: center;
+            background-color: aqua;
+        
+        }
+        .ki{
+            margin-top:10vh;
+            
+            margin-left: 10vh;
+           padding: 20px;
+           margin-right: 30vh;
+            
+        background-color: lavender;
+         
+        }
+        
+        
+    </style>
+</head>
+<body><div class="blue">
+
+
+    <div class="ki">
+        <input type="text" placeholder="name" id="name"/>
+        <input type="text" placeholder="source" id="source" onkeyup="search()"/>
+        <input type="text" placeholder="destination" id="destination"/>
+        <input type="number" placeholder="number" id="number">
+        <input type="text" placeholder="passenger capacity" id="passenger"/>
+        <button onclick="addbus(event)">Addbus</button>
+
+    </div>
+    <div class="nine">
+        <table border="1" cellspacing="0" class="show">
+            <thead>
+                <tr>
+                    <td>name</td>
+                    <td>source</td>
+                    <td>destination</td>
+                    <td>number</td>
+                    <td>passeneger capacity</td>
+                </tr>
+            </thead>
+            <tbody id="dine">
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<script src="day62.js"></script>
+<!-- <script src="day63.js"></script> -->
+</body>
+
+</html>
